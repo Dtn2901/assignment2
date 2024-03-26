@@ -18,15 +18,13 @@ body {
 
 #menuToggle {
     display: block;
-    position: relative;
-    top: 30px;
-    left: 30px;
+    position: fixed; 
+    top: 50px;
+    right: 50px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
-   
 }
-
 #menuToggle a {
     text-decoration: none;
     color: white;
@@ -91,17 +89,18 @@ body {
 }
 
 #menu {
-    position: absolute;
+    position: fixed; 
     width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
+    top: 0;
+    right: 0; 
+    padding: 30px;
+    padding-top: 20px;
     background: var(--gunmetal);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transform-origin: 100% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
 #menu li {
@@ -113,6 +112,9 @@ body {
     transform: none;
 }
 
+
+
+
 .footer {
    position: absolute;
    bottom: 0;
@@ -123,11 +125,41 @@ body {
    justify-content: center;
    align-items: center;
    padding: 20px;
-   background-color: var(--gunmetal);
-    
-
-    
+   background-color: var(--gunmetal);  
 }
+
+$num-of-slide: 5;
+
+.wrapper {
+    max-width: 60em;
+    margin: 1em auto;
+    position: relative;
+}
+
+input {
+    display: none;
+}
+
+.inner {
+    width: percentage(num-of-slide);
+    line-height: 0;
+}
+
+article {
+    width: percentage(1/$num-of=slide);
+    float: left;
+    posi
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
