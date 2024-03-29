@@ -172,9 +172,10 @@ p.desc {
     position: absolute;
     width: 100px;
     height: auto;
-    top: 100px;
+    top: 120px;
     left: 140px;
     z-index: 1;
     font-size: 60px;
 }
 
+}
