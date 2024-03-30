@@ -28,15 +28,17 @@
 }
 .animated-title {
   color: var(--lavender-web);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   height: 90vmin;
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 90vmin;
-  font-weight: bolder;
+  font-weight: 400;
   z-index: 1;
+  text-transform: uppercase;
+  
 }
 .animated-title > div {
   height: 50%;
@@ -45,7 +47,7 @@
   width: 100%;
 }
 .animated-title > div div {
-  font-size: 12vmin;
+  font-size: 50px;
   padding: 2vmin 0;
   position: absolute;
 }
@@ -220,6 +222,15 @@
       }
   
   }
+
+  /* @media screen and (max-width: 500px) {
+
+    .text-top span, .text-bottom  {
+      font-size: 10px;
+
+    }
+  } */
+
   
 
   
