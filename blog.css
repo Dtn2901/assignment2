@@ -1,0 +1,59 @@
+.image1 {
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text {
+    padding: 50px;
+    width: 50vw;
+}
+
+.image1 img {
+    border-radius: 30px;
+    height: 400px;
+    width: auto;
+}
+
+.header {
+    
+    width: 100vw;
+    height: auto;
+    z-index: 1;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+.header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:500px) {
+    .header {
+        width: 300px;
+        height: auto;
+        font-size: 50px;
+        z-index: -1;
+    }
+
+    .image1 img {
+        height: auto;
+        width: 300px;
+    }
+
+    .text {
+        height: auto;
+        width: 300px;
+        font-size: 14px;
+    }
+}
