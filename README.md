@@ -29,3 +29,12 @@ The website features a animated home page, engaging animated sections for the 'A
 ![image](https://github.com/Dtn2901/assignment2/assets/161409524/67f84ec9-aabd-432b-8c98-7f591d1681bc)
 ## Blogs 6
 ![image](https://github.com/Dtn2901/assignment2/assets/161409524/82fe0bec-a62f-497c-9548-30b3bf336bf9)
+
+# Sitemap
+![Sitemap](https://github.com/Dtn2901/assignment2/assets/161409524/14b29ac7-fb90-4074-bc7f-05e2cc4d70a9)
+
+# Target Audience
+The target audience intended for this website is individuals interested in exploring my portfolio, potential employers or clients seeking to learn more about my skills and experience.
+
+# Tech Stack
+This website was built using HTML, CSS and hosted using Netlify.
