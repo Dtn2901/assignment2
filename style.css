@@ -1,12 +1,14 @@
+/* Define custom color variables */
 :root {
     /* CSS HEX */
---gunmetal: #2d3142ff;
---uranian-blue: #b0d7ffff;
---french-gray: #adacb5ff;
---lavender-web: #eae8ffff;
---platinum: #d8d5dbff;
+    --gunmetal: #2d3142ff;
+    --uranian-blue: #b0d7ffff;
+    --french-gray: #adacb5ff;
+    --lavender-web: #eae8ffff;
+    --platinum: #d8d5dbff;
 }
 
+/* Body styles */
 body {
     margin: 0;
     padding: 0;
@@ -16,34 +18,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-    
-    
 }
 
+/* Hamburger menu styles */
 #menuToggle {
     display: block;
-    position: fixed; 
+    position: fixed;
     top: 25px;
     right: 15px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
 }
+
+/* Styles for menu links */
 #menuToggle a {
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
 }
 
+/* Hover effect for menu links */
 #menuToggle a:hover {
-
     color: var(--uranian-blue);
     text-decoration: underline;
-
 }
 
+/* Styles for hamburger menu icon */
 #menuToggle input {
     display: block;
     width: 30px;
@@ -57,6 +58,7 @@ body {
     -webkit-touch-callout: none;
 }
 
+/* Styles for hamburger menu icon spans */
 #menuToggle span {
     display: block;
     width: 33px;
@@ -65,39 +67,35 @@ body {
     position: relative;
     background: var(--gunmetal);
     border-radius: 3px;
-
     z-index: 1;
     transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-
-
-#menuToggle span:nth-child(2) {
-    transform-origin: 0% 100%;
-}
-
+/* Styling for menu icon when checked */
 #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: var(--uranian-blue);
 }
 
+/* Styling for menu icon when checked */
 #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
+/* Styling for menu icon when checked */
 #menuToggle input:checked ~span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
 }
 
+/* Menu styles */
 #menu {
-    position: fixed; 
+    position: fixed;
     width: 250px;
     top: 0;
-    right: 0; 
+    right: 0;
     padding: 20px;
     padding-top: 20px;
     background: var(--gunmetal);
@@ -109,61 +107,61 @@ body {
     margin: 0;
 }
 
+/* Styles for menu items */
 #menu li {
     padding: 10px 0;
     font-size: 22px;
 }
 
+/* Show menu when checkbox is checked */
 #menuToggle input:checked ~ ul {
     transform: none;
 }
 
-
-
-
+/* Footer styles */
 footer {
     bottom: 0;
     display: flex;
     justify-content: center;
     max-width: 100vw;
     width: 100%;
-  }
-  
-  .footer {
+}
+
+/* Footer container styles */
+.footer {
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
     max-width: 100vw;
-    
-  }
-    
+}
 
+/* Styles for footer links */
 .footer a {
     text-decoration: none;
     color: var(--lavender-web);
     margin: 5px;
 }
 
-
-
+/* Wrapper styles */
 .wrapper {
     max-width: 60em;
     margin: 1em auto;
     position: relative;
 }
 
+/* Hide input elements */
 input {
     display: none;
 }
 
+/* Inner element styles */
 .inner {
     width: percentage(num-of-slide);
     line-height: 0;
 }
 
-
-
+/* Logo image styles */
 .logo img {
     position: absolute;
     width: 90px;
@@ -171,8 +169,8 @@ input {
     top: 0;
     left: -12px;
     z-index: 1;
+}
 
-}  
 
 
 

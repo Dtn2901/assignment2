@@ -1,114 +1,112 @@
+/* Styling for the body */
 body {
-    min-height: 100vh;
-    max-width: 100vw;
-    display: block;
-    align-items: normal;
+    min-height: 100vh; /* Ensure minimum height of viewport */
+    max-width: 100vw; /* Ensure maximum width of viewport */
+    display: block; /* Set display property to block */
+    align-items: normal; /* Align items normally */
 }
 
+/* Styling for images */
 .image1 {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Display images as flex */
+    justify-content: center; /* Center align images horizontally */
 }
 
-
+/* Styling for text */
 .text {
-    padding: 60px;
-    width: 50vw;
-    font-family: "Montserrat", sans-serif;
-
+    padding: 60px; /* Add padding around text */
+    width: 50vw; /* Set text width to 50% of viewport width */
+    font-family: "Montserrat", sans-serif; /* Set font family */
 }
 
+/* Styling for text wrapper */
 .textwrapper {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Display text wrapper as flex */
+    justify-content: center; /* Center align text horizontally */
 }
 
+/* Styling for image within image1 class */
 .image1 img {
-    border-radius: 30px;
-    height: 400px;
-    width: auto;
+    border-radius: 30px; /* Add border radius to image */
+    height: 400px; /* Set height of image */
+    width: auto; /* Set width of image to auto */
 }
 
+/* Styling for header */
 .header {
-    
-    width: 100vw;
-    height: auto;
-    z-index: -1;
-    font-size: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-family: "Montserrat", sans-serif;
+    width: 100vw; /* Set header width to viewport width */
+    height: auto; /* Set header height to auto */
+    z-index: -1; /* Set z-index to position behind other elements */
+    font-size: 100px; /* Set font size */
+    display: flex; /* Display header as flex */
+    justify-content: center; /* Center align header horizontally */
+    align-items: center; /* Center align header vertically */
+    font-size: 50px; /* Set font size */
+    font-family: "Montserrat", sans-serif; /* Set font family */
+}
 
-  
-  }
-
-  header {
-    font-family: "Montserrat", sans-serif;
-  }
-
-
+/* Styling for header1 */
 .header1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
+    display: flex; /* Display header1 as flex */
+    justify-content: center; /* Center align header1 horizontally */
+    align-items: center; /* Center align header1 vertically */
+    padding-bottom: 50px; /* Add padding to bottom of header1 */
 }
 
+/* Styling for mainheader */
 .mainheader {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
+    flex-direction: column; /* Set flex direction to column */
+    display: flex; /* Display mainheader as flex */
+    justify-content: center; /* Center align mainheader horizontally */
+    padding-top: 100px; /* Add padding to top of mainheader */
 }
 
+/* Styling for footer */
 .footer {
-    position: absolute;
-    bottom: 0;
+    position: absolute; /* Set footer position to absolute */
+    bottom: 0; /* Set footer position to bottom of the page */
 }
 
-
+/* Media query for screens with maximum width of 500px */
 @media screen and (max-width: 500px) {
-    
+    /* Adjustments for smaller screens */
     .mainheader {
-        max-width: 100vw;
-        
+        max-width: 100vw; /* Set maximum width of mainheader to viewport width */
     }
 
-
-
-
+    /* Styling adjustments for header */
     .header {
-        width: 100%;
-        height: auto;
-        font-size: 50px;
-        z-index: -1;
-        padding-bottom: 20px;
+        width: 100%; /* Set header width to 100% */
+        height: auto; /* Set header height to auto */
+        font-size: 50px; /* Set font size */
+        z-index: -1; /* Set z-index to position behind other elements */
+        padding-bottom: 20px; /* Add padding to bottom of header */
     }
 
+    /* Styling adjustments for images */
     .image1 img {
-        height: auto;
-        width: 80%;
+        height: auto; /* Set height of image to auto */
+        width: 80%; /* Set width of image to 80% of parent container */
     }
 
+    /* Styling adjustments for image1 */
     .image1 {
-        width: 100%;
-        overflow: none;
-        padding-bottom: 20px;
+        width: 100%; /* Set width of image1 to 100% */
+        overflow: none; /* Disable overflow */
+        padding-bottom: 20px; /* Add padding to bottom of image1 */
     }
 
+    /* Styling adjustments for text */
     .text {
-        height: auto;
-        width: 80%;
-        font-size: 14px;
-        padding: 0px;
+        height: auto; /* Set height of text to auto */
+        width: 80%; /* Set width of text to 80% of parent container */
+        font-size: 14px; /* Set font size */
+        padding: 0px; /* Remove padding */
     }
 
+    /* Styling adjustments for footer */
     .footer {
-        position: absolute;
-        bottom: 0;
-    
-        
+        position: absolute; /* Set footer position to absolute */
+        bottom: 0; /* Set footer position to bottom of the page */
     }
 }

@@ -1,38 +1,43 @@
-*{
-    margin:0;
-    padding:0;
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
 }
 
+/* Body styling */
 body {
     align-items: normal;
     min-height: 100vh;
 }
 
+/* Styling for the footer */
 .footer {
     position: absolute;
     display: flex;
-   bottom: 0;
-   width: 100%;
-   height: 3rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
+
+/* Container for main content */
 .contentcontainer {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
-
-
 }
+
+/* Container for main content sections */
 .maincontainer {
     display: flex;
     flex-direction: column;
-    
 }
 
+/* Individual content section */
 .container {
     max-width: 1000px;
     margin: auto;
@@ -43,125 +48,107 @@ body {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
     line-height: 25px;
-   
-
 }
 
-
+/* Styling for the showcase section */
 #showcase { 
-    
-   position: relative;
-   display: flex;
-   justify-content: center;
-   
-   
-    
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-
+/* Styling for the heading within showcase */
 #showcase h1 { 
     font-family: "Montserrat", sans-serif;
     font-size: 50px;
-    line-height : 1.3;
-    position:  relative;
-    animation-name : heading;
-    animation-duration : 3s;
+    line-height: 1.3;
+    position: relative;
+    animation-name: heading;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
-    @keyframes heading {
-        0% {
-            top: -250px;
-        }
-
-        100% {
-            top : 0px;
-        }
+/* Animation for heading */
+@keyframes heading {
+    0% {
+        top: -250px;
     }
-
-    #content { 
-        position: relative;
-        animation-name: content;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
+    100% {
+        top: 0px;
     }
+}
 
-    @keyframes content {
-      0% {
+/* Animation for content */
+#content { 
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes content {
+    0% {
         left: -1000px;
-      }
-
-      100% {
-          left: 0;
     }
+    100% {
+        left: 0;
     }
+}
 
-    .btn { 
-        color: #000;
-        background-color: #fff;
-        text-decoration: none;
-        padding: 1rem 2rem;
-        border: 1px solid #fff;
-        border-radius: 20px;
-        opacity: 0;
-        animation-name: btn;
-        animation-duration: 3s;
-        animation-delay: 3s;
-        animation-fill-mode: forwards;
-        position: relative;
-        width: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Montserrat", sans-serif;
+/* Styling for buttons */
+.btn { 
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+/* Button animation */
+@keyframes btn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+/* Wrapper for buttons */
+.buttonwrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Hover effect for buttons */
+.btn:hover { 
+    box-shadow: #333;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 500px) {
+    /* Adjustments for smaller screens */
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
         font-size: 14px;
-    
-        
-
-        
-       
     }
-
-    .buttonwrapper {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
+    .footer {
+        position: relative;
     }
+}
 
-    .btn:hover { 
-        box-shadow: #333;
-    }
-
-    @keyframes btn {
-      0% {opacity:0}
-      100% {opacity:1}
-    }
-
-
-    @media screen and (max-width:500px){
-
-
-        .container {
-            padding-left: 20px;
-            padding-right: 20px;
-            font-size: 14px;
-           
-        }
-
-        .footer {
-            position: relative;
-        }
-
-       
-            
-         
-
-
-    
-
-    }
 
 
 
